@@ -1,0 +1,33 @@
+# Metadata
+
+- **Reviewer:** Claude — Independent Architectural Reviewer (Senior Software Architect role, per Call for Independent Architectural Review, Baseline v0.1)
+- **AI Model:** Claude Fable 5 (Anthropic)
+- **Model Version:** claude-fable-5
+- **Review Date:** 2026-07-22
+- **Repository Owner:** froekjaer
+- **Repositories Reviewed:**
+  - `froekjaer/mission-framework`
+  - `froekjaer/Mission-Platform` (call refers to `mission-platform`; actual slug differs)
+  - `froekjaer/mission-solar-eclipse`
+  - `froekjaer/collaborative-intelligence`
+  - `froekjaer/-Publication-Pipeline` (call refers to `publication-pipeline`; actual slug differs)
+- **Repository Branch(es):** `main` in all five repositories
+- **Repository Commit(s):**
+  - mission-framework @ `e9644ba`
+  - Mission-Platform @ `48e1cfc`
+  - mission-solar-eclipse @ `43dcc5d`
+  - collaborative-intelligence @ `4ed96fc`
+  - -Publication-Pipeline @ `5b616ee`
+- **Confidence Level:** Moderate-High overall. High for repository-content facts (all evidence quotes and file references were verified against the commits above). Moderate for impact assessments and maturity judgements. Low wherever explicitly marked as assumption.
+- **Known Limitations:**
+  - Review performed on repository contents only. GitHub settings (branch protection, required reviews, issues, PR history, Pages configuration, secrets) were not accessible and are not assessed.
+  - The Publication Pipeline test suite could not be executed: the review environment provides Python 3.10.12; `mission-docgen` requires Python ≥ 3.11. CI configuration (`ci.yml`: ruff + pytest + example build on 3.11) was read but not executed.
+  - GitHub Actions workflows were reviewed as source, not executed.
+  - The ecosystem changed rapidly during the review period (≈60 commits to mission-framework within ~one day). This review is a snapshot of the commits listed above; later commits are not covered.
+  - Reviewer prior involvement: Claude produced the v0.2 conceptual review and a Foundation v1.0 independent examination. Recommendations previously made by this reviewer were adopted into the framework (glossary, canonical loop, Delegated Authority, procedural Core admission). Assessments of those specific elements carry a self-confirmation risk and are flagged where relevant.
+  - AI-reviewer common-cause caveat: this reviewer shares training-distribution biases with other AI board members; convergent findings across AI reviewers are weaker evidence of correctness than convergence across genuinely independent channels.
+- **Assumptions:**
+  - `main` is the authoritative branch in every repository (consistent with repository documentation; not verifiable from settings).
+  - The single visible author identity (froekjaer / Peter Froekjaer) corresponds to one human steward; AI contributions are committed under that identity.
+  - The "Call for Independent Architectural Review" received from the owner is the governing instruction for this deliverable, including the `Review/` directory location in `collaborative-intelligence`, even though that repository currently uses a lower-case `reviews/` directory for examiner workspaces.
+  - Documents without version headers are assumed current as of their latest commit.
