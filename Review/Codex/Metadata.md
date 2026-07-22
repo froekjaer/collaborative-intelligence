@@ -1,0 +1,23 @@
+# Review Metadata
+
+- **Reviewer:** Codex
+- **AI Model:** GPT-5
+- **Model Version:** Codex desktop runtime, 2026-07-22
+- **Review Date:** 2026-07-22
+- **Repository Owner:** `froekjaer`
+- **Repositories Reviewed:**
+  - `mission-framework`
+  - `mission-platform`
+  - `mission-solar-eclipse`
+  - `collaborative-intelligence`
+  - `-Publication-Pipeline` (actual GitHub slug; the requested `publication-pipeline` name resolves to this project)
+- **Repository Branches:** `main` for every reviewed repository
+- **Repository Commits:**
+  - `mission-framework`: `e9644ba523658c3a459a30e221554bcea6cca274`
+  - `mission-platform`: `48e1cfc5a6d71e043f503f776239d849664502c3`
+  - `mission-solar-eclipse`: `43dcc5d6e3bb42c06f167afe63b0b5585dc178e4`
+  - `collaborative-intelligence`: `4ed96fc7155f58d7c3377ae0e2c9468657f376c1`
+  - `-Publication-Pipeline`: `5b616eea0ff722ade6d8626f72fe5563c7ee0a1b`
+- **Confidence Level:** High for repository structure and documented responsibilities; medium for runtime/platform readiness because Mission Platform remains documentation-only and only a limited Documentation Generator implementation was executed.
+- **Known Limitations:** No production deployment, live operational evidence, external threat model, user research, performance data, or complete Mission Platform schemas/APIs were available. This is an architectural/documentary review, not a security audit, scientific validation, or operational safety assessment.
+- **Assumptions:** Repository `main` branches were the intended review baselines; Markdown records accurately describe current intent; no uncommitted or private operational artefacts alter the documented authority map.
