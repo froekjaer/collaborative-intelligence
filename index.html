@@ -42,7 +42,7 @@
             color: var(--text-dim);
             font-size: 1.15rem;
             max-width: 640px;
-            margin: 0 auto 40px;
+            margin: 0 auto 24px;
         }
         .hero .badge {
             display: inline-block;
@@ -52,6 +52,10 @@
             color: var(--accent);
             font-size: 0.85rem;
             font-weight: 600;
+        }
+        .hero .github-link {
+            margin-top: 16px;
+            font-size: 0.9rem;
         }
 
         /* Sections */
@@ -132,6 +136,7 @@
         .status-pivot { background: rgba(255,180,0,0.12); color: #ffb400; }
         .status-public { background: rgba(74,158,255,0.12); color: var(--accent); }
         .status-draft { background: rgba(255,255,255,0.06); color: var(--text-dim); }
+        .dim { color: var(--text-dim); }
 
         /* Timeline */
         .timeline {
@@ -210,6 +215,7 @@
             color: var(--text-dim);
             font-size: 0.85rem;
         }
+        footer a { color: var(--accent); }
 
         @media (max-width: 640px) {
             .timeline { flex-direction: column; align-items: flex-start; }
@@ -224,6 +230,7 @@
             <h1>Collaborative Intelligence</h1>
             <p class="subtitle">A Research Program exploring how autonomous AI agents and human operators collaborate in safety-critical industrial systems.</p>
             <span class="badge">A Research Program</span>
+            <p class="github-link"><a href="https://github.com/froekjaer/collaborative-intelligence">View on GitHub →</a></p>
         </div>
     </div>
 
@@ -265,7 +272,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="https://github.com/froekjaer/collaborative-intelligence">collaborative-intelligence</a></td>
+                    <td><a href="https://froekjaer.github.io/collaborative-intelligence/">collaborative-intelligence</a> <span class="dim">·</span> <a href="https://github.com/froekjaer/collaborative-intelligence">repo</a></td>
                     <td>Research program hub</td>
                     <td><span class="status status-live">Active</span></td>
                 </tr>
@@ -275,7 +282,7 @@
                     <td><span class="status status-draft">Draft</span></td>
                 </tr>
                 <tr>
-                    <td><a href="https://github.com/froekjaer/Mission-Platform">Mission-Platform</a></td>
+                    <td><a href="https://froekjaer.github.io/Mission-Platform/">Mission-Platform</a> <span class="dim">·</span> <a href="https://github.com/froekjaer/Mission-Platform">repo</a></td>
                     <td>Reference implementation</td>
                     <td><span class="status status-live">Active</span></td>
                 </tr>
@@ -290,7 +297,7 @@
                     <td><span class="status status-pivot">Pivot</span></td>
                 </tr>
                 <tr>
-                    <td><a href="https://github.com/froekjaer/water-treatment-interface">water-treatment-interface</a></td>
+                    <td><a href="https://froekjaer.github.io/water-treatment-interface/">water-treatment-interface</a> <span class="dim">·</span> <a href="https://github.com/froekjaer/water-treatment-interface">repo</a></td>
                     <td>Physics-faithful emulator</td>
                     <td><span class="status status-public">Public</span></td>
                 </tr>
@@ -350,14 +357,15 @@
         <h2><span class="dot"></span>Learn More</h2>
         <p>
             Explore the program repositories:
-            <a href="https://github.com/froekjaer/collaborative-intelligence">collaborative-intelligence</a> ·
+            <a href="https://froekjaer.github.io/collaborative-intelligence/">collaborative-intelligence</a> <span class="dim">·</span> <a href="https://github.com/froekjaer/collaborative-intelligence">repo</a> ·
             <a href="https://github.com/froekjaer/mission-framework">mission-framework</a> ·
-            <a href="https://github.com/froekjaer/Mission-Platform">Mission-Platform</a>
+            <a href="https://froekjaer.github.io/Mission-Platform/">Mission-Platform</a> <span class="dim">·</span> <a href="https://github.com/froekjaer/Mission-Platform">repo</a>
         </p>
     </section>
 
     <footer>
-        Collaborative Intelligence Research Program · Maintained by Peter Frøkjær · Material AI involvement disclosed
+        <p>Collaborative Intelligence Research Program · Maintained by Peter Frøkjær · Material AI involvement disclosed</p>
+        <p><a href="https://github.com/froekjaer/collaborative-intelligence">View on GitHub</a></p>
     </footer>
 
 </body>
