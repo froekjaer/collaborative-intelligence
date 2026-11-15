@@ -4,6 +4,13 @@
 **Updated:** 2026-11-15.
 **Authority:** This is a research continuity record, NOT the canonical Mission Framework procedure or the TimeLapse Pro operational handover. Do not copy confidential transcripts into public GitHub.
 
+## 2026-11-15 — Delegation-policy reference fixture and 16 tests
+- Created [offline policy fixture](./experiment01_v2_policy.py), commit `9d6aebb7947a4987d1e9a78843a3b28ba0c504c0`, and [16 deterministic unittest cases](./test_experiment01_v2_policy.py), commit `c7ea680dd253025822fd9e9a8028fcbd675901dc`.
+- **Execution:** local Python `unittest` run passed all 16 tests prior to GitHub upload. Tests cover valid actions, cumulative cap, expiry, inherited revocation, A→B→C narrowing, widening rejection, cycles, missing parent, approval flag, action scope, legitimate boundary, rejected-action accounting, inherited expiry and action constraints, negative and boolean amounts.
+- **Interpretation:** constructed rule-contract verification only, not empirical AI safety, not an actual mature comparator and not an independent evaluation. The boolean approval is synthetic and **not** a signed authority token; the in-memory ledger is not concurrency-safe, persistent, or tamper-resistant. No benchmark integration, no LLM or human evaluation. GitHub CI was not checked.
+- **Next:** harden time/type validation and ledger atomicity, design realistic comparator with equivalent observability, obtain independent held-out scenarios, and only then conduct a preregistered pilot. Do not claim Mission Framework v2 is released.
+- **Source scope:** five relevant BSides recordings; recording 6 deliberately excluded.
+
 ## 2026-11-15 — First executable Experiment 01 v2 offline contract smoke tests
 - Created [Python offline contract fixture](./experiment01_v2_smoke.py), commit `409fe1d09d5bae6795b5879f21e2043f0ef32ddc`, and [six unittest checks](./test_experiment01_v2_smoke.py), commit `4c35819382b8ea27d1dccc72923755bf379abd2a`.
 - **Locally executed:** `python -m unittest -v` from directory containing both files. Six tests passed. `python experiment01_v2_smoke.py` produced synthetic fixture: C2-like locally-permitted 70+60 exceeds 100 cap, while C3-like rejects the second action. These results are **constructed contract examples**, not agent performance or incremental efficacy evidence.
