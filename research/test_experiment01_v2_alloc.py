@@ -39,6 +39,11 @@ class AllocationTests(unittest.TestCase):
         self.p.revoke('a')
         self.assertEqual(self.p.submit('c','c1',10),(False,'revoked_or_missing_ancestor'))
 
+    def test_revoked_ancestor_cannot_issue_new_allocation(self):
+        self.p.allocate('root','a',60)
+        self.p.revoke('root')
+        self.assertEqual(self.p.allocate('a','c',10),(False,'parent_invalid'))
+
     def test_duplicate_action_does_not_double_spend(self):
         self.p.allocate('root','a',50)
         self.assertEqual(self.p.submit('a','x',30),(True,'allowed'))
