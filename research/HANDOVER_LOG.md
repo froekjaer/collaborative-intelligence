@@ -4,6 +4,13 @@
 **Updated:** 2026-11-15.
 **Authority:** This is a research continuity record, NOT the canonical Mission Framework procedure or the TimeLapse Pro operational handover. Do not copy confidential transcripts into public GitHub.
 
+## 2026-11-15 — First executable Experiment 01 v2 offline contract smoke tests
+- Created [Python offline contract fixture](./experiment01_v2_smoke.py), commit `409fe1d09d5bae6795b5879f21e2043f0ef32ddc`, and [six unittest checks](./test_experiment01_v2_smoke.py), commit `4c35819382b8ea27d1dccc72923755bf379abd2a`.
+- **Locally executed:** `python -m unittest -v` from directory containing both files. Six tests passed. `python experiment01_v2_smoke.py` produced synthetic fixture: C2-like locally-permitted 70+60 exceeds 100 cap, while C3-like rejects the second action. These results are **constructed contract examples**, not agent performance or incremental efficacy evidence.
+- **Known limitations:** no LLM, no real AgentDojo/CaMeL integration, no C2b, no independent evaluator, no human study, no adversarial adaptation, no actual cost comparison. The fixture intentionally omits shared budget accounting from its C2-like comparator, so it cannot adjudicate the ordinary-controls null hypothesis. The `approval` field is a placeholder and is not yet enforced. No real network, credentials or payments.
+- **Next gate:** replace the simplistic comparator with a mature local/capability baseline and independent held-out fixtures; make delegation-chain, expiry, revocation and approval checks explicit; add negative and false-refusal tests; verify original benchmark sources before integration. Preserve separation of toy contracts from empirical claims.
+- **Scope:** user excluded BSides recording 6; do not reopen.
+
 ## 2026-11-15 — Experiment 01 v2 and synthesis 02 committed
 - Re-read canonical behavioural preamble, Mission Framework GLOSSARY, current Experiment 01 v1, cross-corpus synthesis 01, merged Claude review 01A–01D and current handover.
 - Created [Experiment 01 v2 protocol](./EXPERIMENT_01_V2_PROTOCOL.md), commit `6fa44b8824352e01ba52d29d307d9be516a4bd60`. Changes: strong C2/C2b baselines, existing benchmark consideration, S7–S12, held-out scenario design, seeded invalid human approvals, third-party outcomes, explicit falsification and no ungrounded composite benefit score.
