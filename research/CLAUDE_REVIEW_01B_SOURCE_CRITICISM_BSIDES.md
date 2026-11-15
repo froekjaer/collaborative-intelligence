@@ -7,7 +7,7 @@
 
 | Issue | Evidence | Consequence |
 |---|---|---|
-| Six recordings exist; recording 6 (start 16:15:19, ≈42 min) was never transcribed | The transcription was stopped at the user's request on 2026-11-15 | "Complete transcription" in `HANDOVER_LOG.md` is inaccurate |
+| Six recordings exist; recording 6 (start 16:15:19, ≈42 min) was not transcribed | **The user confirmed on 2026-11-15 that recording 6 is not relevant** | It is a deliberate exclusion, not a gap. "Complete" should still read "all five relevant recordings" |
 | The event appears to have had about 18 sessions | The organiser refers to one question prize per session, 18 in total | The corpus covers roughly 5 of them. There is no basis for claims about "BSides" as a whole |
 | Recordings 2 and 4 start partway through a talk | Their opening paragraphs | Each speaker's framing and introduction are missing |
 | The recordings were chosen by whoever was recording | No sampling design | Selection bias toward the recorder's interests |
@@ -53,7 +53,7 @@ None of these has been independently measured. All of them are candidate **enabl
 
 | # | Severity | File / section | Change | Confidence |
 |---|---|---|---|---|
-| 1 | Major | `HANDOVER_LOG.md` | Replace "complete" with "5 of ≥6 recordings, about 5 of ~18 sessions, one shared machine transcript" | High |
+| 1 | Major | `HANDOVER_LOG.md` | Replace "complete" with "all five relevant recordings (recording 6 excluded by the user as not relevant), about 5 of ~18 sessions, one shared machine transcript" | High |
 | 2 | Major | Synthesis §A | Add recordings 2 and 4 and their dissent (§4 above) | High |
 | 3 | Major | Bankdata intake | Regrade slide 03 as described in §3 | Medium (primary not read) |
 | 4 | Minor | Review brief, recording 1 flag | Record the SANS verification and the change in sample size | High |
