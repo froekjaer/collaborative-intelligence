@@ -1,0 +1,30 @@
+name: Research fixture contract tests
+
+on:
+  pull_request:
+    paths:
+      - 'research/experiment01_v2_*.py'
+      - 'research/test_experiment01_v2_*.py'
+      - '.github/workflows/research-fixture-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fixture-contracts:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Python and SQLite versions
+        run: python -c "import sys,sqlite3;print(sys.version);print(sqlite3.sqlite_version)"
+      - name: Run synthetic offline fixtures
+        working-directory: research
+        run: python -m unittest -v test_experiment01_v2_policy test_experiment01_v2_atomic test_experiment01_v2_alloc
