@@ -45,6 +45,8 @@ The existing canonical Mission Loop runs Reality → Need → Mission → ... �
 
 Distinguish intended outputs, observed outcomes and **causally attributable** effects. A process can report success while people, animals or ecosystems fare worse. A plausible story is not evidence of causality; compare appropriate counterfactuals where feasible.
 
+**Neuroinclusion and youth capability development:** The diversity and learning dimensions explicitly include young people with diagnoses, neurodivergent young people and differing functional profiles. Research individual strengths and support needs, accessible opportunities, reciprocal mentorship, voluntary participation and two-way adaptation of tasks/environments. Do not infer talents from diagnoses or equate employment with dignity. See [Neuroinclusion and youth capabilities — research track 01](./NEUROINCLUSION_YOUTH_CAPABILITIES_01.md). This is a candidate research programme, not an established intervention.
+
 ## Research programme: five workstreams
 
 **W1 — Human, cultural and civilisational foundations.** Evolution without teleology; cultural evolution, anthropology, religious studies, historical and contemporary philosophy, gender and intersectionality, Indigenous knowledge governance. Study competing perspectives and translations with scholarly review. Source seed: interdisciplinary source register on PR #13 (not merged).
