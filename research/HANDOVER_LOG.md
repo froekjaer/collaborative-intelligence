@@ -4,6 +4,15 @@
 **Updated:** 2026-11-15.
 **Authority:** This is a research continuity record, NOT the canonical Mission Framework procedure or the TimeLapse Pro operational handover. Do not copy confidential transcripts into public GitHub.
 
+## 2026-11-15 — Experiment 01 v2 and synthesis 02 committed
+- Re-read canonical behavioural preamble, Mission Framework GLOSSARY, current Experiment 01 v1, cross-corpus synthesis 01, merged Claude review 01A–01D and current handover.
+- Created [Experiment 01 v2 protocol](./EXPERIMENT_01_V2_PROTOCOL.md), commit `6fa44b8824352e01ba52d29d307d9be516a4bd60`. Changes: strong C2/C2b baselines, existing benchmark consideration, S7–S12, held-out scenario design, seeded invalid human approvals, third-party outcomes, explicit falsification and no ungrounded composite benefit score.
+- Created [Cross-corpus synthesis 02 / v2 readiness](./CROSS_CORPUS_SYNTHESIS_02_V2_READINESS.md), commit `d6b9d0c02adfae921316735f3f2f5e59eff9939f`. Incorporates dissent from recordings 2 and 4, glossary mapping, survey and transcription limitations, OT human fallback and explicit normative gates.
+- **Not performed:** no code harness, no live LLM experiment, no benchmark integration/validation, no new external source verification, no changes to canonical Mission Framework. These are design artifacts, not a finished or validated Mission Framework v2.
+- **Scope:** five user-selected relevant BSides recordings; sixth intentionally excluded, not pending.
+- **Next actions:** independent review of v2 protocol, verify benchmark suitability and original publications, implement isolated synthetic pilot with held-out scenarios, and create separate architecture decision proposal only after evidence. Address human–AI/AI–AI collaboration and governance in a separate non-operational research note.
+- **Handover requirement:** update this log on each substantive research change with commit IDs and explicit unperformed steps.
+
 ## 2026-11-15 — ChatGPT merged independent review PR #8
 - **Verified GitHub merge:** [PR #8](https://github.com/froekjaer/collaborative-intelligence/pull/8) merged into default branch, merge commit `e76354913ac9eaee6eedfd9f7f807fd646c3b113`. Includes Claude's 01A–01D advisory review and updated handover. No canonical Mission Framework change.
 - **Scope correction verified on PR branch before merge:** recording 6 deliberately excluded as irrelevant by the user; the five relevant recordings are the defined BSides research corpus. This is not full-event coverage; one machine transcript is a common-mode source limitation. Do **not** reopen recording 6 as a pending task.
