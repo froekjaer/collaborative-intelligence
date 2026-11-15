@@ -4,6 +4,19 @@
 **Updated:** 2026-11-15.
 **Authority:** This is a research continuity record, NOT the canonical Mission Framework procedure or the TimeLapse Pro operational handover. Do not copy confidential transcripts into public GitHub.
 
+## 2026-11-15 — Claude narrowed review 01 delivered (partial), branch `claude/review-01-bsides`
+- **Written by Claude directly in the repository** (not relayed). Baseline `52eb8c9`; mission-framework `9a1a454`.
+- **Inspected:** the canonical preamble; all research memos (the agenda and the coding protocol only partly); the GLOSSARY and ARCHITECTURE sections relevant here; the **full transcript of BSides recordings 1–5**. External checks: SANS 2026 ICS/OT figures (verified); CISA alert on the npm worm (Sep 2025); the USENIX 2025 study of package hallucination; press reports of OpenAI's 20 Oct 2026 monitoring disclosure (**primary source not read**).
+- **Delivered (one commit each):**
+  - [01A Concept overlap](./CLAUDE_REVIEW_01A_CONCEPT_OVERLAP.md): `e309e81`
+  - [01B Source criticism](./CLAUDE_REVIEW_01B_SOURCE_CRITICISM_BSIDES.md): `1ea130a`
+  - [01C Experiment 01 critique](./CLAUDE_REVIEW_01C_EXPERIMENT_01_CRITIQUE.md): `3b54b6d`
+  - [01D OT resilience and people](./CLAUDE_REVIEW_01D_OT_RESILIENCE_AND_PEOPLE.md): `b47ad36`
+- **NOT delivered:** 01E (human–AI and AI–AI collaboration, governance of offensive agents). The drafting was interrupted by a safety classifier and the partial draft was deleted. Brief questions 7, 8 (partly) and 9 remain **open**. A human or ChatGPT should take these up.
+- **Correction to the entry below:** the BSides transcription is **not complete**. Five of at least six recordings were transcribed; recording 6 (16:15:19, ≈42 min) was never transcribed, and the event appears to have had about 18 sessions. All five transcripts are **one machine transcription made by Claude**, so ChatGPT and Claude share a common-mode source dependency.
+- **Main disagreements with the existing memos:** the five-check model is mostly a relabelling of *Delegated Authority* and established security concepts; recordings 2 and 4 (dissent) are unanalysed; Experiment 01 lacks strong baselines; the S4 scenario may not be compositional; the Bankdata slide 03 claim should be regraded to "vendor-reported".
+- **Next:** ChatGPT challenges 01A–01D against the sources; a human checks transcript passages against the audio; the user decides whether to merge the branch. No canonical change.
+
 ## 2026-11-15 — Claude review attempt reported by user (not independently verified)
 - User forwarded Claude's status report. Claude **reports** reading the canonical preamble, research handover, review brief, synthesis, other research memos, Mission Framework glossary/architecture, and all five BSides recordings.
 - Claude **reports** checking selected external claims and finding SANS figures consistent with a 2026 report; this log does not treat that as independently reverified by ChatGPT.
