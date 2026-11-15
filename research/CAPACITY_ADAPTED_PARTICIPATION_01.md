@@ -58,6 +58,26 @@ Avoid turning these into presumed roles for a diagnosis, age group or health con
 - Evaluate whether organisational cost-saving shifts hidden burdens to participants, families or public services.
 - Publish negative results and stop if harms outweigh benefits.
 
+## Extension: overloaded employees and voluntary association governance
+
+Capacity adaptation is not limited to people excluded from paid employment. It is equally relevant to **people already working under excessive load** and to **volunteers and board members** whose unpaid responsibilities compete with paid work, family, care and recovery. These are three different institutional settings with distinct legal duties, authority structures, incentives and risks; do not pool outcomes as though they were identical.
+
+**Employment setting:** Study workload, interruption costs, meeting load, task fragmentation, control over schedules, psychosocial safety and actual recovery. AI may reduce administrative burden or may intensify expectations, monitoring and work pace. Measure total human effort, not just time saved on an individual task. Employers retain duties that cannot be delegated to an AI system.
+
+**Volunteer and association setting:** Study role clarity, concentration of invisible work on chairs/secretaries/treasurers, board succession, documentation handover, burnout, unequal access to participation and governance quality. AI may support minutes, briefing, document retrieval, draft preparation and continuity, but accountable board decisions, confidentiality and democratic legitimacy stay with the humans authorised under association rules. Volunteer participation should remain voluntary and bounded; avoid turning saved time into ever-growing expectations.
+
+**Capacity-adjusted role design:** Define minimum essential responsibilities separately from optional contributions; offer time-bounded roles, rotating assignments, asynchronous review, explicit backups, easy handoffs, workload transparency with privacy protection, and opt-out without shame. Board offices with statutory or fiduciary obligations cannot simply be fragmented without checking governing rules and applicable law.
+
+**Pilot candidate:** In a willing association board, compare a baseline period with a carefully bounded AI-supported workflow for agenda preparation, action tracking and handover. Preregister board-member reported workload, number of overdue actions, handover completeness, participation equity, decision quality, privacy incidents and volunteer retention. Use a small pilot only as feasibility evidence; no causal claims without adequate comparison and confounder handling. Obtain consent, clarify who may access confidential records, and never upload sensitive board material without appropriate governance.
+
+**Additional research questions:**
+- RQ-P7: Do AI-supported handoffs and role redesign reduce **total** board-member workload rather than transferring it to another volunteer?
+- RQ-P8: Do flexible roles improve sustained participation and equitable influence without weakening accountability?
+- RQ-P9: In paid work, does time saved through AI become recovery/autonomy or higher output demands?
+- RQ-P10: Can people with non-linear working styles participate effectively without forcing one planning or communication style, while preserving shared clarity and dependable commitments?
+
+**Critical guardrail:** The participant's stated capacity and choice matter more than a model-inferred productivity score. Do not infer health status from working style, schedule, message patterns or AI interaction history.
+
 ## Source and evidence plan
 
 Candidate literatures to verify bibliographically: WHO International Classification of Functioning, Disability and Health (ICF); UN Convention on the Rights of Persons with Disabilities; capabilities approach (Sen, Nussbaum); self-determination theory (Deci and Ryan); occupational science and meaningful occupation; supported employment and individual placement/support; chronic illness and fluctuating disability; fatigue/pacing research; participatory design and disability justice; volunteer wellbeing (including selection bias); AI accessibility and automation deskilling. No claim of empirical support is made here until individual sources are checked.
