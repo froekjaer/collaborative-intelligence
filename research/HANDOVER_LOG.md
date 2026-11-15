@@ -4,6 +4,13 @@
 **Updated:** 2026-11-15.
 **Authority:** This is a research continuity record, NOT the canonical Mission Framework procedure or the TimeLapse Pro operational handover. Do not copy confidential transcripts into public GitHub.
 
+## 2026-11-15 — ChatGPT merged independent review PR #8
+- **Verified GitHub merge:** [PR #8](https://github.com/froekjaer/collaborative-intelligence/pull/8) merged into default branch, merge commit `e76354913ac9eaee6eedfd9f7f807fd646c3b113`. Includes Claude's 01A–01D advisory review and updated handover. No canonical Mission Framework change.
+- **Scope correction verified on PR branch before merge:** recording 6 deliberately excluded as irrelevant by the user; the five relevant recordings are the defined BSides research corpus. This is not full-event coverage; one machine transcript is a common-mode source limitation. Do **not** reopen recording 6 as a pending task.
+- **Assessment:** treat 01A–01D as peer-review input, not validated research conclusions. Priority challenges: existing Delegated Authority semantics versus new terminology; recordings 2 and 4 as counterevidence; stronger Experiment 01 baselines and independently designed scenarios; manual fallback competence and safety/continuity trade-offs in OT.
+- **Still open:** 01E (human–AI / AI–AI collaboration and governance, handled at non-operational architecture level); independent verification of contested primary-source claims; audio checking of material transcript passages; redesign and run real controlled Experiment 01. No independent model experiment performed by ChatGPT in this step.
+- **Next:** prepare a balanced, traceable synthesis and revised experiment protocol. Keep canonical changes behind a separate review gate.
+
 ## 2026-11-15 — Claude narrowed review 01 delivered (partial), branch `claude/review-01-bsides`
 - **Written by Claude directly in the repository** (not relayed). Baseline `52eb8c9`; mission-framework `9a1a454`.
 - **Inspected:** the canonical preamble; all research memos (the agenda and the coding protocol only partly); the GLOSSARY and ARCHITECTURE sections relevant here; the **full transcript of BSides recordings 1–5**. External checks: SANS 2026 ICS/OT figures (verified); CISA alert on the npm worm (Sep 2025); the USENIX 2025 study of package hallucination; press reports of OpenAI's 20 Oct 2026 monitoring disclosure (**primary source not read**).
