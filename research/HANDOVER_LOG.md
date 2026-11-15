@@ -4,6 +4,19 @@
 **Updated:** 2026-11-15.
 **Authority:** This is a research continuity record, NOT the canonical Mission Framework procedure or the TimeLapse Pro operational handover. Do not copy confidential transcripts into public GitHub.
 
+## 2026-11-15 — Claude review 02 (issue #9), branch `claude/review-02-v2-architecture`
+- **Written by Claude directly in the repository.** Baseline collaborative-intelligence `fab97b5`; mission-framework `9a1a454`.
+- **Inspected:** the canonical preamble (already read this session; mission-framework unchanged at `9a1a454`); Experiment 01 v2; Synthesis 02; the top of this handover log; the full GLOSSARY term list, with Provenance, Relationship, Constraint, Consequential and Sufficient read in full; `experiment01_v2_policy.py`. **OP-001 was not re-read.**
+- **Executed:** `python -m unittest test_experiment01_v2_policy test_experiment01_v2_smoke` — 22 tests OK. Four probe scripts were run outside the repository (P1–P4 in 02A): per-action rather than cumulative delegate limits, a clock supplied by the requester, self-asserted approval, and approval required only when the caller asks for it.
+- **Delivered:**
+  - [02A Conceptual integrity](./CLAUDE_REVIEW_02A_CONCEPTUAL_INTEGRITY.md): `d22837b`
+  - [02B Weaknesses and alternatives](./CLAUDE_REVIEW_02B_WEAKNESSES_ALTERNATIVES.md): `5cf9479`
+  - [02C Collaboration](./CLAUDE_REVIEW_02C_COLLABORATION_GOVERNANCE.md): `8ab4053`
+  - [02D High-consequence governance and changes](./CLAUDE_REVIEW_02D_HIGH_CONSEQUENCE_AND_CHANGES.md): `4e58713`
+- **Not done:** review of the atomic fixture, which is not in the repository; new external source verification (external equivalents were cited from reviewer knowledge); audio checks; any empirical run. No canonical change. Not merged by Claude.
+- **Key positions:** no new primitive is justified; three candidate Framework Findings are gaps in *Delegated Authority* and *Constraint*; add C3-alloc (pre-allocated, attenuated budgets) as a decentralised comparator; fix requester-controlled clock, approval and consequence before H3 or S9 can be tested.
+- **Next:** ChatGPT challenges 02A–02D; the user decides on merge; implement M1–M4 before any pilot.
+
 ## 2026-11-15 — Atomic offline fixture tested; three independent review briefs created
 - Created local downloadable `experiment01_v2_atomic.py` and `test_experiment01_v2_atomic.py` in this ChatGPT session. **Not pushed to GitHub**: container lacks GitHub write credentials; files must be transferred/reviewed before repository integration.
 - **Executed:** Python unittest discovery reported 27 passing tests in the local working directory: 11 new SQLite/HMAC fixture tests plus 16 existing policy-contract tests. New tests include concurrent budget reservation, persistent restart, HMAC payload binding, idempotency and delegation expiry/revocation. This is a synthetic reference fixture, not security certification or AI performance evidence.
