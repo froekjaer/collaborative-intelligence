@@ -40,6 +40,17 @@ class AllocationLedger:
             row=self.db.execute('SELECT allocated,spent,delegated,revoked FROM accounts WHERE actor=?',(parent,)).fetchone()
             if row is None or row[3]:
                 return False,'parent_invalid'
+            # A revoked ancestor must not authorize new child allocations.
+            seen=set()
+            cursor=parent
+            while cursor is not None:
+                if cursor in seen:
+                    return False,'parent_invalid'
+                seen.add(cursor)
+                link=self.db.execute('SELECT parent,revoked FROM accounts WHERE actor=?',(cursor,)).fetchone()
+                if link is None or link[1]:
+                    return False,'parent_invalid'
+                cursor=link[0]
             if row[0]-row[1]-row[2] < amount:
                 return False,'allocation_exceeds_remaining'
             # Parent pointers are immutable and each child is unique.
